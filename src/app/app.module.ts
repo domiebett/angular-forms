@@ -16,9 +16,13 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { DischargeFormComponent } from './components/discharge-form/discharge-form.component';
+import { HeaderComponent } from './components/header/header.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DischargeFormComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
