@@ -8,11 +8,9 @@ import { FormBuilder, FormControl, Validators } from '@angular/forms';
 })
 export class DischargeFormComponent {
   constructor(private formBuilder: FormBuilder) {}
-
-  nameFormControl = new FormControl('', Validators.required);
-
+  
   profileForm = this.formBuilder.group({
-    PatientName: this.nameFormControl,
+    PatientName: ['', Validators.required],
     Age: ['', Validators.required],
     dob: ['', Validators.required],
     gender: ['male', Validators.required],
