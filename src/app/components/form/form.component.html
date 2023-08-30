@@ -5,11 +5,19 @@
     </mat-card-header>
 
     <mat-card-content>
-      <app-inputs
-        *ngFor="let content of formContents"
-        [form]="form"
-        [formContent]="content"
-      ></app-inputs>
+      <ng-container *ngFor="let content of formContents">
+        <app-form-title
+          *ngIf="content.type === 'sectionTitle'"
+          [title]="content.title"
+          [color]="content.color"
+        >
+        </app-form-title>
+        <app-inputs
+          *ngIf="content.type !== 'sectionTitle'"
+          [form]="form"
+          [formContent]="content"
+        ></app-inputs>
+      </ng-container>
     </mat-card-content>
 
     <mat-card-actions>

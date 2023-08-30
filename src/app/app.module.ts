@@ -26,6 +26,7 @@ import { GroupedInputsComponent } from './components/form/inputs/grouped-inputs/
 import { InputsComponent } from './components/form/inputs/inputs.component';
 import { AdmissionFormComponent } from './components/admission-form/admission-form.component';
 import { FormComponent } from './components/form/form.component';
+import { FormTitleComponent } from './components/form/title/form-title.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { FormComponent } from './components/form/form.component';
     InputsComponent,
     AdmissionFormComponent,
     FormComponent,
+    FormTitleComponent,
   ],
   imports: [
     BrowserModule,
