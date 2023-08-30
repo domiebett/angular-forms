@@ -6,15 +6,3 @@
   background-color: #f2f2f2;
   border-radius: 5px;
 }
-
-.full-width {
-  width: 100%;
-}
-
-.margin-left mat-radio-button:not(:first-child) {
-  margin-left: 10px;
-}
-
-.top-padding {
-  padding-top: 3px;
-}
