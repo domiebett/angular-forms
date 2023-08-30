@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
+import { DateRangeContent } from 'src/app/interfaces/date-range-content';
+import { GroupedInputsContent } from 'src/app/interfaces/grouped-inputs-content';
+import { RadiosContent } from 'src/app/interfaces/radios-content';
+import { TextAreaContent } from 'src/app/interfaces/text-area-content';
+import { TextContent } from 'src/app/interfaces/text-content';
 
 @Component({
   selector: 'app-discharge-form',
@@ -9,7 +14,7 @@ import { FormBuilder, FormControl, Validators } from '@angular/forms';
 export class DischargeFormComponent {
   constructor(private formBuilder: FormBuilder) {}
 
-  formContents = [
+  formContents: Array<TextContent | TextAreaContent | GroupedInputsContent | DateRangeContent | RadiosContent> = [
     {type: 'text', name: 'patientName', placeHolder: 'Enter patient name', label: 'Patient Name?'},
     {type: 'text', name: 'age', placeHolder: 'Age', label: 'Patient Age?'},
     {type: 'radios', name: 'gender', label: "Pick Patient Gender", options: [

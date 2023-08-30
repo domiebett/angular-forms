@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { RadioOption } from 'src/app/interfaces/radio-option';
 
 @Component({
   selector: 'app-radios',
@@ -10,5 +11,5 @@ export class RadiosComponent {
   @Input() form!: FormGroup;
   @Input() label!: string;
   @Input() name!: string;
-  @Input() options!: any[];
+  @Input() options!: RadioOption[];
 }

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { DateRangeInput } from 'src/app/interfaces/date-range-input';
 
 @Component({
   selector: 'app-date-range',
@@ -11,5 +12,5 @@ export class DateRangeComponent {
   @Input() label!: string;
   @Input() name!: string;
   @Input() hint!: string;
-  @Input() inputs!: Record<any, any>;
+  @Input() inputs!: DateRangeInput;
 }
