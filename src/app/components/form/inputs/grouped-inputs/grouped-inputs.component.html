@@ -4,9 +4,9 @@
     <li *ngFor="let input of inputs">
       <app-text
         [form]="form"
-        name="{{ input.name }}"
-        label="{{ input.label }}"
-        placeHolder="{{ input.placeHolder }}"
+        [name]="input.name"
+        [label]="input.label"
+        [placeHolder]="input.placeHolder"
       ></app-text>
     </li>
   </ol>
