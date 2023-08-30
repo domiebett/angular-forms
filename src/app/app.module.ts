@@ -50,7 +50,8 @@ import { InputsComponent } from './components/form/inputs/inputs.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
