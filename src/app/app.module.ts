@@ -24,6 +24,8 @@ import { RadiosComponent } from './components/form/inputs/radios/radios.componen
 import { DateRangeComponent } from './components/form/inputs/date-range/date-range.component';
 import { GroupedInputsComponent } from './components/form/inputs/grouped-inputs/grouped-inputs.component';
 import { InputsComponent } from './components/form/inputs/inputs.component';
+import { AdmissionFormComponent } from './components/admission-form/admission-form.component';
+import { FormComponent } from './components/form/form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,8 @@ import { InputsComponent } from './components/form/inputs/inputs.component';
     DateRangeComponent,
     GroupedInputsComponent,
     InputsComponent,
+    AdmissionFormComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
