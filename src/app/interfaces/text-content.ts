@@ -1,5 +1,5 @@
 export interface TextContent {
-  type: string;
+  type: 'text';
   name: string;
   placeHolder: string;
   label: string;

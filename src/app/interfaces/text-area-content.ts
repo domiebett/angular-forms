@@ -1,5 +1,5 @@
 export interface TextAreaContent {
-  type: string;
+  type: 'textarea';
   name: string;
   placeHolder: string;
   label: string;

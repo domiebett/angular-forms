@@ -1,5 +1,5 @@
 export interface FormTitleContent {
-    type: string;
+    type: 'sectionTitle';
     title: string;
     color: string;
 }

@@ -1,5 +1,5 @@
 export interface CheckboxContent {
-    type: string;
+    type: 'checkbox';
     name: string;
     label: string;
     options: CheckboxOption[];

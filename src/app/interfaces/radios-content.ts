@@ -1,7 +1,7 @@
 import { RadioOption } from "./radio-option";
 
 export interface RadiosContent {
-  type: string;
+  type: 'radios';
   name: string;
   label: string;
   options: RadioOption[]
