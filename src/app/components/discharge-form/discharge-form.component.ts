@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { FormContent } from 'src/app/interfaces/form-content';
+import { generateFormGroup } from 'src/app/utils/form.utils';
 
 @Component({
   selector: 'app-discharge-form',
@@ -45,34 +46,9 @@ export class DischargeFormComponent {
     {type: 'text', name: 'doctor', placeHolder: 'Doctor’s Name', label: 'Doctor’s Name:'}
   ]
 
-  profileForm = this.formBuilder.group({
-    patientName: ['', Validators.required],
-    age: ['', Validators.required],
-    gender: ['male', Validators.required],
-    dob: ['', Validators.required],
-    adminNo: ['', Validators.required],
-    consultantNames: ['', Validators.required],
-    admission: ['', Validators.required],
-    comorbidities: ['', Validators.required],
-    diagnosis: ['', Validators.required],
-    history: ['', Validators.required],
-    investigations: ['', Validators.required],
-    labs: ['', Validators.required],
-    management: ['', Validators.required],
-    rom: ['', Validators.required],
-    gait: ['', Validators.required],
-    mobility: ['', Validators.required],
-    motor: ['', Validators.required],
-    occupational: ['', Validators.required],
-    speech: ['', Validators.required],
-    nursing: ['', Validators.required],
-    clinical: ['', Validators.required],
-    medical: ['', Validators.required],
-    instruction: ['', Validators.required],
-    doctor: ['', Validators.required],
-  });
+  dischargeForm = generateFormGroup(this.formBuilder, this.formContents);
 
   saveForm() {
-    console.log('Form data is ', this.profileForm.value);
+    console.log('Form data is ', this.dischargeForm.value);
   }
 }

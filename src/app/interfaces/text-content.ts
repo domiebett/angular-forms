@@ -3,4 +3,5 @@ export interface TextContent {
   name: string;
   placeHolder: string;
   label: string;
+  value?: string;
 }
