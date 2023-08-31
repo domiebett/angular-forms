@@ -7,10 +7,12 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
+  @Input() title!: string;
   @Input() form!: FormGroup;
   @Input() formContents!: any[];
 
   onSave() {
     this.form.markAllAsTouched();
+    console.log(this.form.value);
   }
 }

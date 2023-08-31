@@ -35,4 +35,11 @@
       [label]="formContent['label']"
       [inputs]="formContent['inputs']"
     ></app-grouped-inputs>
+    <app-checkbox
+      *ngIf="formContent['type'] === 'checkbox'"
+      [form]="form"
+      [name]="formContent['name']"
+      [label]="formContent['label']"
+      [options]="formContent['options']"
+    ></app-checkbox>
 </div>

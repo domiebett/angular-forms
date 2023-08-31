@@ -15,13 +15,18 @@ export class AdmissionFormComponent {
     {name: 'referringDoctor', type: 'text', label: 'Name of Referring Doctor', placeHolder: 'Name of Referring Doctor'},
     {type: 'sectionTitle', title: 'Some Title', color: '#000000'},
     {name: 'doctorContact', type: 'text', label: "Doctor's Contact", placeHolder: "Doctor's Contact"},
+    {type: 'checkbox', name: 'testCheckbox', label: "Pick your checkbox options", options: [
+      {label: 'Test 1', value: 'isaTest', checked: true},
+      {label: 'Test 2', value: 'another test', checked: false}
+    ]},
   ];
 
   admissionForm = this.formBuilder.group({
     patientName: ['', Validators.required],
     hospital: ['', Validators.required],
     referringDoctor: ['', Validators.required],
-    doctorContact: ['', Validators.required]
+    doctorContact: ['', Validators.required],
+    testCheckbox: ['', Validators.required],
   });
 
   onSave() {

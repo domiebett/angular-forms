@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { MatRadioModule } from '@angular/material/radio';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
@@ -27,6 +28,7 @@ import { InputsComponent } from './components/form/inputs/inputs.component';
 import { AdmissionFormComponent } from './components/admission-form/admission-form.component';
 import { FormComponent } from './components/form/form.component';
 import { FormTitleComponent } from './components/form/title/form-title.component';
+import { CheckboxComponent } from './components/form/inputs/checkbox/checkbox.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +43,7 @@ import { FormTitleComponent } from './components/form/title/form-title.component
     AdmissionFormComponent,
     FormComponent,
     FormTitleComponent,
+    CheckboxComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,7 @@ import { FormTitleComponent } from './components/form/title/form-title.component
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
+    MatCheckboxModule,
     MatCardModule,
     MatButtonModule,
     MatDatepickerModule,
